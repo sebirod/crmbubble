@@ -1,0 +1,393 @@
+/* Estilos generales */
+body {
+    padding-top: 70px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Estilo para el header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+}
+
+.header-scrolled {
+    padding: 5px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.navbar-custom {
+    transition: all 0.3s ease;
+}
+
+.header-scrolled .navbar-custom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Estilo para el logo */
+.navbar-brand img {
+    height: 50px; /* Aumentamos el tamaño del logo */
+    margin-right: 10px;
+}
+
+/* Estilo para el menú */
+.navbar-custom {
+    background-color: #79a7a8;
+    border-radius: 25px; /* Redondeamos ambos lados */
+    padding: 10px 20px;
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+/* Para cambiar el color del icono del toggler cuando el menú está colapsado en móviles */
+.navbar-custom .navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-custom .menu-text {
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+/* Ajuste para el menú en pantallas más pequeñas */
+@media (max-width: 991.98px) {
+    .navbar-custom {
+        border-radius: 15px; /* Reducimos el radio en pantallas pequeñas */
+    }
+    .navbar-nav {
+        padding: 10px 0;
+    }
+    .nav-link {
+        padding: 10px !important;
+    }
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid #0056b3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el gráfico */
+#progressChart {
+    max-height: 400px;
+}
+
+/* Estilos para los mensajes de alerta */
+.messages .alert {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de la lista en anuncios */
+.list-group-item {
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.list-group-item:hover {
+    background-color: #e2e6ea;
+}
+
+/* Estilos para los badges y textos coloreados */
+.badge {
+    font-size: 0.8em;
+    padding: 0.25em 0.4em;
+    border-radius: 0.25rem;
+}
+
+/* Estilos adicionales para las asistencias */
+.card-body .badge.bg-success,
+.card-body .badge.bg-danger {
+    font-size: 0.8em;
+    padding: 0.25em 0.4em;
+    border-radius: 0.25rem;
+    color: white !important; /* Asegura que el texto sea blanco */
+}
+
+.card-body .badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.card-body .badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.card-body .d-flex.justify-content-between {
+    margin-bottom: 0.5rem;
+}
+.card-body .d-flex.justify-content-between:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para las filas de asistencia */
+.card .card-body .attendance-row {
+    margin-bottom: 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card .card-body .attendance-row:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.card .card-body .attendance-row:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.card .card-body .attendance-row:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para los badges de asistencia */
+.card .card-body .attendance-row .badge {
+    color: white;
+    font-weight: normal;
+}
+
+.card .card-body .attendance-row .badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+/* Ajuste para el espaciado en la tarjeta de Asistencias */
+.card-body p {
+    margin-bottom: 0.5rem;
+}
+
+.text-purple {
+    color: #8e44ad !important;
+}
+
+.badge.text-purple {
+    background-color: transparent;
+    border: 1px solid #8e44ad;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Estilos para las barras de progreso */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 24px;
+    background-color: #4CAF50;
+    text-align: right;
+    line-height: 24px;
+    color: white;
+    transition: width 0.5s ease-in-out;
+    padding: 0 5px;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    right: 5px;
+    left: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.progress-date {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 2px;
+}
+
+/* Estilos específicos para cada tipo de progreso */
+.card-header.bg-primary + .card-body .progress-bar {
+    background-color: #007bff;
+}
+
+.card-header.bg-success + .card-body .progress-bar {
+    background-color: #28a745;
+}
+
+.card-header.bg-warning + .card-body .progress-bar {
+    background-color: #ffc107;
+}
+
+
+/* Limitar la altura de la lista de anuncios y hacer que los elementos no visibles se oculten */
+#announcement-list {
+    max-height: 200px; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+    padding-left: 0;
+    list-style: none;
+}
+
+/* Estilos para los controles de paginación */
+.pagination-controls {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pagination-controls .btn {
+    margin: 0 5px;
+}
+
+/* Estilos para la tabla de pagos */
+.table {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table thead th {
+    background-color: #79a7a8;
+    color: white;
+    border: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+/* Estilos para los badges en la tabla de pagos */
+.table .badge {
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+}
+
+.table .badge.bg-success {
+    background-color: #28a745 !important;
+    color: white;
+}
+
+.table .badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #212529;
+}
+
+/* Estilos para los botones en la tabla de pagos */
+.table .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+.table .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.table .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.table td.amount {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.table td .btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    margin-right: 5px;
+}
+
+.table td .btn-sm:last-child {
+    margin-right: 0;
+}
+
+.table td .fas {
+    font-size: 1rem;
+}
+
+/* Estilos para la página de login */
+.login-card {
+    border-color: #79a7a8;
+    border-width: 2px;
+}
+
+.login-card .card-header {
+    background-color: #79a7a8;
+    color: white;
+}
+
+.login-card .card-body {
+    background-color: white;
+}
+
+.login-card .btn-primary {
+    background-color: #79a7a8;
+    border-color: #79a7a8;
+}
+
+.login-card .btn-primary:hover {
+    opacity: 0.9;
+}
+
+
+/* Ajustes para los colores de fondo de los headers de las tarjetas */
+.card-header.bg-danger { background-color: #dc3545 !important; }
+.card-header.bg-secondary { background-color: #6c757d !important; }
+.card-header.bg-success { background-color: #28a745 !important; }
+.card-header.bg-info { background-color: #17a2b8 !important; }
+.card-header.bg-warning { background-color: #ffc107 !important; color: #212529 !important; }

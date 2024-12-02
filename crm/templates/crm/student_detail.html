@@ -1,0 +1,94 @@
+{% extends 'crm/base.html' %}
+{% block content %}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Detalles del Estudiante</h2>
+
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="card-title mb-0">Foto de Perfil</h5>
+                </div>
+                <div class="card-body text-center">
+                    {% if student.profile_photo %}
+                        <img src="{{ student.profile_photo.url }}" alt="Foto de perfil" class="img-fluid rounded-circle" style="max-width: 200px;">
+                    {% else %}
+                        <p>No hay foto de perfil disponible.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">Información Personal</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Nombre:</strong> {{ student.user.get_full_name }}</p>
+                    <p><strong>Email:</strong> {{ student.user.email }}</p>
+                    <p><strong>Fecha de Nacimiento:</strong> {{ student.date_of_birth }}</p>
+                    <p><strong>Edad:</strong> {{ student.age }}</p>
+                    <p><strong>Nacionalidad:</strong> {{ student.nationality }}</p>
+                    <p><strong>Tipo de Documento:</strong> {{ student.get_document_type_display }}</p>
+                    <p><strong>Número de Documento:</strong> {{ student.document_number }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h5 class="card-title mb-0">Información Académica</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Nivel:</strong> {{ student.get_level_display }}</p>
+                    <p><strong>Curso:</strong> {{ course.name }}</p>
+                    <p><strong>Grupo:</strong> {{ group.name }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="card-title mb-0">Información de Contacto</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Dirección:</strong> {{ student.address }}</p>
+                    <p><strong>Contacto de Emergencia:</strong> {{ student.emergency_contact }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="card-title mb-0">Miembros de la Familia</h5>
+                </div>
+                <div class="card-body">
+                    {% if student.family_members.all %}
+                        <ul>
+                        {% for family_member in student.family_members.all %}
+                            <li>{{ family_member.get_relationship_display }}: {{ family_member.first_name }} {{ family_member.last_name }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>No hay miembros de la familia listados.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{% url 'student_list' %}" class="btn btn-secondary">Volver a la Lista</a>
+    </div>
+</div>
+
+{% endblock %}

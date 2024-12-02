@@ -1,0 +1,21 @@
+{% extends 'crm/base.html' %}
+
+{% block content %}
+<h1>{{ course.name }}</h1>
+<p><strong>Level:</strong> {{ course.get_level_display }}</p>
+<p><strong>Description:</strong> {{ course.description }}</p>
+<p><strong>Start Date:</strong> {{ course.start_date }}</p>
+<p><strong>End Date:</strong> {{ course.end_date }}</p>
+<p><strong>Max Students:</strong> {{ course.max_students }}</p>
+
+<h2>Groups</h2>
+<ul>
+{% for group in course.group_set.all %}
+    <li><a href="{% url 'group_detail' group.id %}">{{ group.name }}</a></li>
+{% empty %}
+    <li>No groups for this course.</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'course_list' %}" class="btn btn-secondary">Back to Courses</a>
+{% endblock %}

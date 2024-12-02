@@ -1,0 +1,27 @@
+{% extends 'crm/base.html' %}
+
+{% block content %}
+<h1>{{ group.name }}</h1>
+<p><strong>Course:</strong> {{ group.course.name }}</p>
+<p><strong>Teacher:</strong> {{ group.teacher.user.get_full_name }}</p>
+
+<h2>Students</h2>
+<ul>
+{% for student in group.students.all %}
+    <li><a href="{% url 'student_detail' student.id %}">{{ student.user.get_full_name }}</a></li>
+{% empty %}
+    <li>No students in this group.</li>
+{% endfor %}
+</ul>
+
+<h2>Class Schedule</h2>
+<ul>
+{% for schedule in group.classschedule_set.all %}
+    <li>{{ schedule.get_day_of_week_display }}: {{ schedule.start_time }} - {{ schedule.end_time }}</li>
+{% empty %}
+    <li>No schedule set for this group.</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'group_list' %}" class="btn btn-secondary">Back to Groups</a>
+{% endblock %}

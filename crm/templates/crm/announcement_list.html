@@ -1,0 +1,21 @@
+{% extends 'crm/base.html' %}
+
+{% block content %}
+<h1>Announcements</h1>
+{% for announcement in announcements %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ announcement.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Posted on: {{ announcement.date_posted }}</h6>
+            <p class="card-text">{{ announcement.content }}</p>
+            {% if announcement.is_global %}
+                <span class="badge bg-primary">Global</span>
+            {% else %}
+                <span class="badge bg-secondary">Course Specific</span>
+            {% endif %}
+        </div>
+    </div>
+{% empty %}
+    <p>No announcements found.</p>
+{% endfor %}
+{% endblock %}

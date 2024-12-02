@@ -1,0 +1,30 @@
+{% extends 'crm/base.html' %}
+
+{% block content %}
+<h1>Groups</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Teacher</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for group in groups %}
+        <tr>
+            <td>{{ group.name }}</td>
+            <td>{{ group.course.name }}</td>
+            <td>{{ group.teacher.user.get_full_name }}</td>
+            <td>
+                <a href="{% url 'group_detail' group.id %}" class="btn btn-sm btn-info">View</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="4">No groups found.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="{% url 'group_create' %}" class="btn btn-primary">Add New Group</a>
+{% endblock %}

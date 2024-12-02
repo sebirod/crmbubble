@@ -1,0 +1,75 @@
+{% extends 'crm/base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Add Student</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% for field in form %}
+        <div class="form-group">
+            {{ field.label_tag }}
+            {{ field }}
+            {% if field.help_text %}
+                <small class="form-text text-muted">{{ field.help_text }}</small>
+            {% endif %}
+            {% if field.errors %}
+                <div class="invalid-feedback">
+                    {{ field.errors }}
+                </div>
+            {% endif %}
+        </div>
+        {% if field.name == 'date_of_birth' %}
+            <div id="age-display" class="form-text text-muted"></div>
+        {% endif %}
+    {% endfor %}
+
+    <h3>Family Members</h3>
+    {{ family_members.management_form }}
+    <div id="family-members-container">
+        {% for family_form in family_members %}
+            <div class="family-member-form">
+                {{ family_form.as_p }}
+            </div>
+        {% endfor %}
+    </div>
+    <button type="button" id="add-family-member" class="btn btn-secondary">Add Another Family Member</button>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script>
+    $(document).ready(function() {
+        function calculateAge(birthDate) {
+            var today = new Date();
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+
+        $('#id_date_of_birth').change(function() {
+            var birthDate = new Date($(this).val());
+            var age = calculateAge(birthDate);
+            $('#age-display').text('Age: ' + age);
+        });
+
+        $('#add-family-member').click(function() {
+            var form_idx = $('#id_family_members-TOTAL_FORMS').val();
+            $('#id_family_members-TOTAL_FORMS').val(parseInt(form_idx) + 1);
+            var empty_form = $('.family-member-form:first').clone(true);
+            empty_form.find(':input').each(function() {
+                var name = $(this).attr('name').replace('-0-', '-' + form_idx + '-');
+                var id = 'id_' + name;
+                $(this).attr({'name': name, 'id': id}).val('').removeAttr('checked');
+            });
+            empty_form.find('label').each(function() {
+                var newFor = $(this).attr('for').replace('-0-', '-' + form_idx + '-');
+                $(this).attr('for', newFor);
+            });
+            $('#family-members-container').append(empty_form);
+        });
+    });
+</script>
+{% endblock %}

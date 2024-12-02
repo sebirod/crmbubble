@@ -1,0 +1,95 @@
+{% extends 'crm/base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <div class="row align-items-center mb-3">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        {% if company_info.logo %}
+                            <img src="{{ company_info.logo.url }}" alt="{{ company_info.name }} Logo" class="img-fluid mr-3" style="max-height: 80px;">
+                        {% endif %}
+                        <h1 class="h3 mb-0 font-weight-bold">Bubble English Academy</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <h2 class="h4 mb-0">FACTURA</h2>
+                    <p class="mb-0">Factura n.°: {{ payment.id }}</p>
+                    <p class="mb-0">Fecha: {{ payment.payment_date|date:"d/m/Y" }}</p>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-1">{{ company_info.fiscal_address }}</p>
+                    <p class="small mb-1">Tel: {{ company_info.phone }}</p>
+                    <p class="small mb-1">Email: {{ company_info.email }}</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5 class="font-weight-bold">Cliente</h5>
+                    <p>{{ student.user.get_full_name }}<br>
+                    {{ student.address }}<br>
+                    Email: {{ student.user.email }}</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Artículo</th>
+                                <th>Cantidad</th>
+                                <th>Precio Unitario</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ enrollment.course.name }}</td>
+                                <td>1</td>
+                                <td>€{{ enrollment.total_cost }}</td>
+                                <td>€{{ enrollment.total_cost }}</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>Subtotal:</strong></td>
+                                <td>€{{ enrollment.total_cost }}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>IVA ({{ enrollment.vat_rate }}%):</strong></td>
+                                <td>€{{ enrollment.total_cost_with_vat|subtract:enrollment.total_cost }}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                                <td><strong>€{{ enrollment.total_cost_with_vat }}</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <p><strong>Método de pago:</strong> {{ payment.get_payment_method_display }}</p>
+                    <p class="text-center"><strong>¡Gracias por su pago!</strong></p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button onclick="window.print();" class="btn btn-primary mr-2">Imprimir Factura</button>
+                    <a href="{% url 'download_invoice_pdf' payment.id %}" class="btn btn-secondary">Descargar PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

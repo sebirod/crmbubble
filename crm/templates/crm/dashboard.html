@@ -1,0 +1,196 @@
+{% extends 'crm/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Bienvenido, {{ student.user.get_full_name }}</h2>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="card-title mb-0">Asistencias</h5>
+                </div>
+                <div class="card-body p-0">
+                    {% for attendance in recent_attendances %}
+                        <div class="attendance-row d-flex justify-content-between align-items-center p-2">
+                            <span>{{ attendance.date|date:"F d, Y" }}:</span>
+                            {% if attendance.is_present %}
+                                <span class="badge bg-success text-white">Presente</span>
+                            {% else %}
+                                <span class="badge bg-danger text-white">Ausente</span>
+                            {% endif %}
+                        </div>
+                    {% empty %}
+                        <p class="p-2 m-0">No hay registros de asistencia recientes.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Anuncios Recientes -->
+<div class="col-md-6">
+    <div class="card h-100">
+        <div class="card-header bg-secondary text-white">
+            <h5 class="card-title mb-0">Anuncios Recientes</h5>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                {% for announcement in recent_announcements %}
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <small>{{ announcement.date_posted|date:"F d, Y" }}</small>
+                            {% if announcement.is_global %}
+                                <span class="badge bg-success text-white">Global</span>
+                            {% elif announcement.courses.exists %}
+                                <span class="badge text-purple">Grupo</span>
+                            {% else %}
+                                <span class="badge bg-primary text-white">Personal</span>
+                            {% endif %}
+                        </div>
+                        {% if announcement.is_global %}
+                            <h6 class="text-success">{{ announcement.title }}</h6>
+                        {% elif announcement.courses.exists %}
+                            <h6 class="text-purple">{{ announcement.title }}</h6>
+                        {% else %}
+                            <h6 class="text-primary">{{ announcement.title }}</h6>
+                        {% endif %}
+                        <p>{{ announcement.content|truncatewords:20 }}</p>
+                    </li>
+                {% empty %}
+                    <li class="list-group-item">No hay anuncios recientes.</li>
+                {% endfor %}
+            </ul>
+            {% if recent_announcements.has_other_pages %}
+                <div id="pagination-controls" class="pagination-controls mt-3">
+                    {% if recent_announcements.has_previous %}
+                        <a class="btn btn-primary" href="?page={{ recent_announcements.previous_page_number }}">Anterior</a>
+                    {% endif %}
+                    {% if recent_announcements.has_next %}
+                        <a class="btn btn-primary" href="?page={{ recent_announcements.next_page_number }}">Siguiente</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- FIN: Bloque de Anuncios Recientes -->
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">Progreso General</h5>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-text">{{ overall_progress }}%</h2>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: {{ overall_progress }}%;">
+                            <span class="progress-text">{{ overall_progress }}%</span>
+                        </div>
+                    </div>
+                    <p>Este es tu progreso general en los cursos.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-header bg-success text-white">
+                    <h5 class="card-title mb-0">Progreso Reciente</h5>
+                </div>
+                <div class="card-body">
+                    {% for progress in recent_progress %}
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: {{ progress.score }}%;">
+                                <span class="progress-text">{{ progress.score }}%</span>
+                            </div>
+                        </div>
+                        <div class="progress-date">{{ progress.date }}</div>
+                    {% empty %}
+                        <p>No hay registros de progreso reciente.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-header bg-info text-white">
+                    <h5 class="card-title mb-0">Próximo Examen</h5>
+                </div>
+                <div class="card-body">
+                    {% if next_exam %}
+                        <h5>{{ next_exam.name }}</h5>
+                        <p>Fecha: {{ next_exam.date|date:"F d, Y" }}</p>
+                    {% else %}
+                        <p>No hay exámenes programados.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-header bg-warning text-white">
+                    <h5 class="card-title mb-0">Progreso de Exámenes</h5>
+                </div>
+                <div class="card-body">
+                    {% for result in recent_exam_results %}
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: {{ result.score }}%;">
+                                <span class="progress-text">{{ result.score }}%</span>
+                            </div>
+                        </div>
+                        <p>{{ result.exam.name }}</p>
+                    {% empty %}
+                        <p>No hay resultados de exámenes recientes.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('progressChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar', // Tipo de gráfico, puedes cambiarlo a 'line', 'pie', etc.
+        data: {
+            labels: {% for progress in recent_progress %}'{{ progress.date }}'{% if not forloop.last %}, {% endif %}{% endfor %},
+            datasets: [{
+                label: 'Progreso',
+                data: [
+                    {% for progress in recent_progress %}{{ progress.score }}{% if not forloop.last %}, {% endif %}{% endfor %}
+                ],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)', // Color de fondo de las barras
+                borderColor: 'rgba(75, 192, 192, 1)', // Color del borde de las barras
+                borderWidth: 1 // Grosor del borde
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Puntuación (%)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Fecha'
+                    }
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

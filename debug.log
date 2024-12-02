@@ -1,0 +1,933 @@
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir /Users/xsector/pinokio/english_academy_crm/crm/templates with glob **/*.
+Watching dir /Users/xsector/pinokio/english_academy_crm/locale with glob **/*.mo.
+Watching dir /Users/xsector/pinokio/english_academy_crm/crm/locale with glob **/*.mo.
+Watching dir /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/locale with glob **/*.mo.
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.001) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/exceptions.py first seen with mtime 1725127771.9502132
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/machinery.py first seen with mtime 1707004902.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/async_checks.py first seen with mtime 1724759644.8210013
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/encoders.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/dateformat.py first seen with mtime 1724759644.8679712
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/models.py first seen with mtime 1724759644.5335
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/module_loading.py first seen with mtime 1724759644.870697
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/base.py first seen with mtime 1724759644.8336508
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sysconfig.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/__init__.py first seen with mtime 1724759644.8316264
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/loaders/base.py first seen with mtime 1724759644.8636117
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/codecs.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_collections_abc.py first seen with mtime 1707004886.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py first seen with mtime 1707004910.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/sslproto.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/english_academy_crm/crm/utils.py first seen with mtime 1725020661.367491
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/secrets.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/selectors.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py first seen with mtime 1707004904.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/mimetypes.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/introspection.py first seen with mtime 1724759644.8342195
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/utils.py first seen with mtime 1724759644.8235722
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/traceback.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/__init__.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/usps.py first seen with mtime 1725019277.3106089
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/generic/dates.py first seen with mtime 1724759644.8747776
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_asyncio.cpython-39-darwin.so first seen with mtime 1708653913.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/functions/window.py first seen with mtime 1724759644.8452704
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pkgutil.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/bootstrap.py first seen with mtime 1725127771.9500525
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/transports.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/templatetags/admin_urls.py first seen with mtime 1724759644.4562187
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/events.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/utils.py first seen with mtime 1724759644.8319583
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/widgets.py first seen with mtime 1724759644.8480642
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/checks.py first seen with mtime 1724759644.8166873
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/version.py first seen with mtime 1724759644.8719418
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/urls/__init__.py first seen with mtime 1724759644.8659143
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/handlers/base.py first seen with mtime 1724759644.8246336
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_zapfdingbats.py first seen with mtime 1725019277.323491
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pathlib.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/decorators/__init__.py first seen with mtime 1724759644.8735454
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/units.py first seen with mtime 1725019277.320309
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/finders.py first seen with mtime 1724759644.8168342
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/__init__.py first seen with mtime 1724759644.3636131
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_markupbase.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/constants.py first seen with mtime 1724759644.841499
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/times.py first seen with mtime 1724875170.0627344
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/templatetags/tz.py first seen with mtime 1724759644.864602
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_heapq.cpython-39-darwin.so first seen with mtime 1708653908.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_queue.cpython-39-darwin.so first seen with mtime 1708653905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/templatetags/crispy_forms_utils.py first seen with mtime 1725127771.9517953
+File /Users/xsector/pinokio/english_academy_crm/crm/models.py first seen with mtime 1725394767.2181044
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_scproxy.cpython-39-darwin.so first seen with mtime 1708653907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/urls/resolvers.py first seen with mtime 1724759644.866528
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/decoder.py first seen with mtime 1707004909.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/conf/global_settings.py first seen with mtime 1724759644.3026059
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/forms.py first seen with mtime 1724759644.4937098
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/difflib.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pprint.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/templatetags/base.py first seen with mtime 1724759644.4563313
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/widgets.py first seen with mtime 1725019277.3109164
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/flowables.py first seen with mtime 1725019277.3267593
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/lookups.py first seen with mtime 1724759644.842285
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/urls/utils.py first seen with mtime 1724759644.8666422
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/renderers.py first seen with mtime 1724759644.8477674
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/state.py first seen with mtime 1724759644.8400083
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/proxy.py first seen with mtime 1724759644.8438137
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/rl_codecs.py first seen with mtime 1725019277.3249607
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/protocols.py first seen with mtime 1707004905.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/locale.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_compile.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_courier.py first seen with mtime 1725019277.3221037
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/mail/__init__.py first seen with mtime 1724759644.8250325
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/feedparser.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/validators.py first seen with mtime 1725019277.3206155
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/crypto.py first seen with mtime 1724759644.8677216
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/keyword.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/management/base.py first seen with mtime 1724759644.826354
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/handlers/__init__.py first seen with mtime 1724759644.8243647
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/translation/reloader.py first seen with mtime 1724759644.872345
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/operations/fields.py first seen with mtime 1724759644.8406608
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/__init__.py first seen with mtime 1724875170.0612833
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/eanbc.py first seen with mtime 1725019277.3097024
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/views/main.py first seen with mtime 1724759644.456916
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_pickle.cpython-39-darwin.so first seen with mtime 1708653916.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/iterators.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/loaders/cached.py first seen with mtime 1724759644.8637178
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/io.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/regex_helper.py first seen with mtime 1724759644.8709593
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/filters/right_margin.py first seen with mtime 1724759643.9161215
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/stat.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/__init__.py first seen with mtime 1725019277.298782
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/__init__.py first seen with mtime 1725019277.306768
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/_version.py first seen with mtime 1724931226.5833728
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_timesbolditalic.py first seen with mtime 1725019277.3231664
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/wsgiref/__init__.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/operations/special.py first seen with mtime 1724759644.8409135
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/logger.py first seen with mtime 1725019277.318441
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/logging/config.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/validators.py first seen with mtime 1724759644.8194444
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/mail/utils.py first seen with mtime 1724759644.825262
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/operator.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_decimal.cpython-39-darwin.so first seen with mtime 1708653906.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/exceptions.py first seen with mtime 1724759644.8617742
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/__init__.py first seen with mtime 1724931226.5873458
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/fcntl.cpython-39-darwin.so first seen with mtime 1708653907.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/util.py first seen with mtime 1707004902.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/colors.py first seen with mtime 1725019277.317464
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/compatibility/__init__.py first seen with mtime 1724759644.8220353
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/calendar.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/security/base.py first seen with mtime 1724759644.8223653
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/copyreg.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/layout.py first seen with mtime 1725127771.9506052
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/pyphen/__init__.py first seen with mtime 1725058831.9660602
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/timezone.py first seen with mtime 1724759644.8716033
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/futures.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/_util.py first seen with mtime 1724931226.5925336
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_osx_support.py first seen with mtime 1707004886.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/unicodedata.cpython-39-darwin.so first seen with mtime 1708653910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/layout_slice.py first seen with mtime 1725127771.9507816
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/connection.py first seen with mtime 1724759644.867614
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/__init__.py first seen with mtime 1724759644.8728364
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/decorators/csrf.py first seen with mtime 1724759644.873961
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/features.py first seen with mtime 1724759644.8325818
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/_parseaddr.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/cffi/lock.py first seen with mtime 1725058833.4300773
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/operations/__init__.py first seen with mtime 1724759644.8404114
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/backends/__init__.py first seen with mtime 1724759644.8626928
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/policy.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/views.py first seen with mtime 1724759644.8176827
+File /Users/xsector/pinokio/english_academy_crm/crm/templatetags/custom_filters.py first seen with mtime 1725060248.896639
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/engine/filter_stack.py first seen with mtime 1724759643.9150572
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/__init__.py first seen with mtime 1707004909.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/engine/__init__.py first seen with mtime 1724759643.9149444
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/apps/__init__.py first seen with mtime 1724759644.3018146
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/cli.py first seen with mtime 1724759643.9138029
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/message.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/templatetags/crispy_forms_field.py first seen with mtime 1725127771.9512687
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/urls/converters.py first seen with mtime 1724759644.8662777
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/storage/__init__.py first seen with mtime 1724759644.8237188
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/exceptions.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/paginator.py first seen with mtime 1724759644.8190882
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/functions/mixins.py first seen with mtime 1724759644.845052
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/html.py first seen with mtime 1724759644.8696423
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/__init__.py first seen with mtime 1724759644.5327783
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/code128.py first seen with mtime 1725019277.3090236
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/apps.py first seen with mtime 1724759644.4926093
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/api.py first seen with mtime 1724759644.6871512
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/storage/handler.py first seen with mtime 1724759644.8240583
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/__init__.py first seen with mtime 1724759643.9135292
+File /Users/xsector/pinokio/english_academy_crm/crm/forms.py first seen with mtime 1725126432.1190677
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_json.cpython-39-darwin.so first seen with mtime 1708653916.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/base64mime.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/filters/aligned_indent.py first seen with mtime 1724759643.9155967
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hmac.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_enc_zapfdingbats.py first seen with mtime 1725019277.3220003
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/json.py first seen with mtime 1724759644.843603
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/textsplit.py first seen with mtime 1725019277.3202097
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_enc_standard.py first seen with mtime 1725019277.3216987
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/base.py first seen with mtime 1725127771.9498477
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextvars.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/caches.py first seen with mtime 1724759644.8211064
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/dates.py first seen with mtime 1724759644.8682292
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/encoder.py first seen with mtime 1707004909.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/normalDate.py first seen with mtime 1725019277.3185737
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/tokens.py first seen with mtime 1724759644.4945529
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/base.py first seen with mtime 1724759644.8413906
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/formsets.py first seen with mtime 1724759644.8474722
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/aliases.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/features.py first seen with mtime 1724759644.8340836
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/base64.py first seen with mtime 1707004886.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/os.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/parse.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/apps.py first seen with mtime 1724759644.3640056
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/__init__.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/common.py first seen with mtime 1725019277.3094456
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/abc.py first seen with mtime 1707004902.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_contextvars.cpython-39-darwin.so first seen with mtime 1708653905.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/selector_events.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/exceptions.py first seen with mtime 1724759644.3643875
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/serializers/base.py first seen with mtime 1724759644.8303895
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/query_utils.py first seen with mtime 1724759644.8429172
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/duration.py first seen with mtime 1724759644.868817
+File /Users/xsector/pinokio/english_academy_crm/crm/templatetags/form_tags.py first seen with mtime 1725111916.443441
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/management/__init__.py first seen with mtime 1724759644.5651848
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/header.py first seen with mtime 1707004908.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/posixpath.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/library.py first seen with mtime 1724759644.8619213
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/storage/mixins.py first seen with mtime 1724759644.8242779
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/converters.py first seen with mtime 1724875170.0623212
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/decimal.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/defaulttags.py first seen with mtime 1724759644.8615184
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/grp.cpython-39-darwin.so first seen with mtime 1708653917.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/templatetags/__init__.py first seen with mtime 1724759644.8640184
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_courierbold.py first seen with mtime 1725019277.322201
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_datetime.cpython-39-darwin.so first seen with mtime 1708653907.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lzma.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/boundfield.py first seen with mtime 1724759644.8469875
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/lorem_ipsum.py first seen with mtime 1724759644.8704724
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/templates.py first seen with mtime 1724759644.8217359
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/management/commands/runserver.py first seen with mtime 1724759644.8288524
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/fnmatch.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_timesitalic.py first seen with mtime 1725019277.3232834
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/context.py first seen with mtime 1724759644.8610628
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/management/__init__.py first seen with mtime 1724759644.5302987
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/__init__.py first seen with mtime 1724759644.8386104
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/qr.py first seen with mtime 1725019277.310197
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/constraints.py first seen with mtime 1724759644.8416264
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/tokens.py first seen with mtime 1724759643.9146643
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so first seen with mtime 1708653913.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/message.py first seen with mtime 1707004908.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ipaddress.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/sites.py first seen with mtime 1724759644.365213
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/shortcuts.py first seen with mtime 1724759644.3016164
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/quoprimime.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/filters/tokens.py first seen with mtime 1724759643.916233
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/random.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/apps.py first seen with mtime 1724759644.6872678
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/files.py first seen with mtime 1724759644.8213077
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/streams.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/__init__.py first seen with mtime 1724759644.8320608
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/functions/text.py first seen with mtime 1724759644.845165
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/cp437.py first seen with mtime 1707004906.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/renderPDF.py first seen with mtime 1725019277.3069434
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/charts/areas.py first seen with mtime 1725019277.3112159
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/actions.py first seen with mtime 1724759644.363899
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/http/request.py first seen with mtime 1724759644.8592567
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/storage/filesystem.py first seen with mtime 1724759644.8239565
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/utils.py first seen with mtime 1724759644.8401234
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/storage/base.py first seen with mtime 1724759644.6880789
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/safestring.py first seen with mtime 1724759644.8710737
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/html/__init__.py first seen with mtime 1707004909.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/tokenize.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/functions/math.py first seen with mtime 1724759644.8449478
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/utils.py first seen with mtime 1724759644.843125
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/decorators.py first seen with mtime 1724759644.8685896
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/security/csrf.py first seen with mtime 1724759644.822468
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/_header_value_parser.py first seen with mtime 1707004907.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/numbers.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/usps4s.py first seen with mtime 1725019277.3107777
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/deletion.py first seen with mtime 1724759644.8417518
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/decorators/cache.py first seen with mtime 1724759644.8736591
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/engine/grouping.py first seen with mtime 1724759643.9151893
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_bz2.cpython-39-darwin.so first seen with mtime 1708653907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/conf/urls/static.py first seen with mtime 1724759644.3635178
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/__init__.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/_imaging.cpython-39-darwin.so first seen with mtime 1724931226.5976572
+File /Users/xsector/pinokio/english_academy_crm/crm/apps.py first seen with mtime 1724760006.0648344
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/asgiref/local.py first seen with mtime 1724759644.1240726
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/charts/__init__.py first seen with mtime 1725019277.3110843
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/checks.py first seen with mtime 1724759644.492959
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfgen/pdfgeom.py first seen with mtime 1725019277.3257284
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/handlers/exception.py first seen with mtime 1724759644.8247557
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/cffi/__init__.py first seen with mtime 1725058833.4286542
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/__init__.py first seen with mtime 1707004905.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/_policybase.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/generic/__init__.py first seen with mtime 1724759644.8745186
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/cache/backends/base.py first seen with mtime 1724759644.8200688
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/topological_sort.py first seen with mtime 1724759644.8717136
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/views/__init__.py first seen with mtime 1724759644.4565473
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/format_helpers.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_timesbold.py first seen with mtime 1725019277.3230572
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/latin_1.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/_os.py first seen with mtime 1724759644.8668764
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ntpath.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/checks.py first seen with mtime 1724759644.364161
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/validation.py first seen with mtime 1724759644.8331256
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/__init__.py first seen with mtime 1724759644.8335137
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/PyFontify.py first seen with mtime 1725019277.3165894
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/signals.py first seen with mtime 1724759644.819193
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/cffi/model.py first seen with mtime 1725058833.4292228
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/loaders/__init__.py first seen with mtime 1724759644.8633854
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/mail/message.py first seen with mtime 1724759644.8251576
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/constants/__init__.py first seen with mtime 1724875170.0634854
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zoneinfo/_tzpath.py first seen with mtime 1707004917.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/subprocess.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/base.py first seen with mtime 1724759644.8609283
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/cache/backends/locmem.py first seen with mtime 1724759644.8205247
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/constants.py first seen with mtime 1724759644.687378
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/filters/reindent.py first seen with mtime 1724759643.9160044
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/abag.py first seen with mtime 1725019277.3168018
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/cffi/error.py first seen with mtime 1725058833.4281795
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/enums.py first seen with mtime 1725019277.317723
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/functional.py first seen with mtime 1724759644.8693788
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/_exceptions.py first seen with mtime 1724875170.0614207
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/argparse.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/generic/edit.py first seen with mtime 1724759644.8750193
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/tables.py first seen with mtime 1725019277.3282223
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_timesroman.py first seen with mtime 1725019277.3233895
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/array.cpython-39-darwin.so first seen with mtime 1708653904.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/asgiref/current_thread_executor.py first seen with mtime 1724759644.1237955
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_opcode.cpython-39-darwin.so first seen with mtime 1708653906.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfgen/canvas.py first seen with mtime 1725019277.325498
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_tasks.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/timesince.py first seen with mtime 1724759644.8714786
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/templatetags/l10n.py first seen with mtime 1724759644.8643672
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/asgiref/__init__.py first seen with mtime 1724759644.123187
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/sql/constants.py first seen with mtime 1724759644.8456998
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/database.py first seen with mtime 1724759644.8212066
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/urls/exceptions.py first seen with mtime 1724759644.8663847
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/log.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/http/multipartparser.py first seen with mtime 1724759644.8591106
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/validation.py first seen with mtime 1724759644.8346212
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/validators.py first seen with mtime 1724759644.4947639
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/linecache.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/handlers/wsgi.py first seen with mtime 1724759644.8248737
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_compression.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/management/commands/runserver.py first seen with mtime 1724759644.8182766
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/signals.py first seen with mtime 1724759644.8430216
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/autoreload.py first seen with mtime 1724759644.8672574
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_zoneinfo.cpython-39-darwin.so first seen with mtime 1708653918.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/files.py first seen with mtime 1724759644.8434777
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/xpreformatted.py first seen with mtime 1725019277.328402
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/http/__init__.py first seen with mtime 1724759644.8588595
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/options.py first seen with mtime 1724759644.3650815
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/__init__.py first seen with mtime 1725019277.3088822
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/__init__.py first seen with mtime 1725019277.3208814
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/ipv6.py first seen with mtime 1724759644.8699987
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/forms.py first seen with mtime 1724759644.5333726
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/pdfdoc.py first seen with mtime 1725019277.32423
+File /Users/xsector/pinokio/english_academy_crm/english_academy_crm/settings.py first seen with mtime 1725440532.2581198
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/glob.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/templatetags/__init__.py first seen with mtime 1724759644.4558032
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/fields.py first seen with mtime 1724759644.5332599
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/tree.py first seen with mtime 1724759644.8718307
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/apps.py first seen with mtime 1724759644.7498176
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zipfile.py first seen with mtime 1707004889.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfgen/pathobject.py first seen with mtime 1725019277.3256176
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/multipart.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_enc_macroman.py first seen with mtime 1725019277.3214817
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/sql/where.py first seen with mtime 1724759644.846343
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/rl_accel.py first seen with mtime 1725019277.3192332
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/exceptions.py first seen with mtime 1724759644.7500622
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/base_session.py first seen with mtime 1724759644.7499378
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/types.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_uuid.cpython-39-darwin.so first seen with mtime 1708653903.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/messages.py first seen with mtime 1724759644.8214116
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/rl_config.py first seen with mtime 1725019277.2989233
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/gettext.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/expressions.py first seen with mtime 1724759644.8420336
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/views.py first seen with mtime 1724759644.4949024
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/management/__init__.py first seen with mtime 1724759644.8262033
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/contextlib.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/helper.py first seen with mtime 1725127771.9503999
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/decorators/debug.py first seen with mtime 1724759644.8740575
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/geomutils.py first seen with mtime 1725019277.3183305
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/math.cpython-39-darwin.so first seen with mtime 1708653917.0
+File /Users/xsector/pinokio/english_academy_crm/manage.py first seen with mtime 1724759703.9310076
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/asyncio.py first seen with mtime 1724759644.8671193
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/code93.py first seen with mtime 1725019277.30931
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/widgets.py first seen with mtime 1724759644.3655946
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/admin.py first seen with mtime 1724759644.492497
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/serializers/json.py first seen with mtime 1724759644.8304923
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/creation.py first seen with mtime 1724759644.8324475
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/enums.py first seen with mtime 1724759644.8418636
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/__init__.py first seen with mtime 1707004902.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/filters/others.py first seen with mtime 1724759643.9157357
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/__init__.py first seen with mtime 1725019277.3166966
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/models.py first seen with mtime 1724759644.84766
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/http/response.py first seen with mtime 1724759644.8593946
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/text.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/middleware.py first seen with mtime 1724759644.493966
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/urls.py first seen with mtime 1724759644.8219445
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/hashable.py first seen with mtime 1724759644.8694847
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/loader.py first seen with mtime 1724759644.862043
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/pdfmetrics.py first seen with mtime 1725019277.3245525
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/__init__.py first seen with mtime 1724759644.8208919
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/abc.py first seen with mtime 1707004886.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/re.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sites/shortcuts.py first seen with mtime 1724759644.7845428
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/__init__.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/defaults.py first seen with mtime 1724759644.8732054
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/__init__.py first seen with mtime 1724759644.8164132
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/security/__init__.py first seen with mtime 1724759644.8222384
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/charset.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/engine.py first seen with mtime 1724759644.8616548
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/rl_safe_eval.py first seen with mtime 1725019277.3193965
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/__init__.py first seen with mtime 1724759644.818705
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/signing.py first seen with mtime 1724759644.8193111
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/utils.py first seen with mtime 1725019277.3204708
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/move.py first seen with mtime 1724759644.8231359
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_socket.cpython-39-darwin.so first seen with mtime 1708653918.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/heapq.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/tempfile.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/templatetags/cache.py first seen with mtime 1724759644.8641384
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/reprlib.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/conf/urls/__init__.py first seen with mtime 1724759644.363297
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/inspect.py first seen with mtime 1724759644.8698945
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/__init__.py first seen with mtime 1724759644.3011527
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/reverse_related.py first seen with mtime 1724759644.844414
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/sql.py first seen with mtime 1724759643.9145381
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/signal.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/creation.py first seen with mtime 1724759644.8339622
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/__init__.py first seen with mtime 1724759644.86674
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/templatetags/crispy_forms_tags.py first seen with mtime 1725127771.9516385
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/attrmap.py first seen with mtime 1725019277.317034
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/utils.py first seen with mtime 1724759644.8175585
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/opcode.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/middleware/__init__.py first seen with mtime 1724759644.8595088
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_enc_pdfdoc.py first seen with mtime 1725019277.321591
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/backends/base.py first seen with mtime 1724759644.7507143
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/apps.py first seen with mtime 1724759644.5330148
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/_common.py first seen with mtime 1707004902.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/functools.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/ddl_references.py first seen with mtime 1724759644.831748
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/constants.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/related.py first seen with mtime 1724759644.843989
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/base_user.py first seen with mtime 1724759644.4928443
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/frames.py first seen with mtime 1725019277.3269193
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/parser.py first seen with mtime 1707004908.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sha512.cpython-39-darwin.so first seen with mtime 1708653905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/exceptions.py first seen with mtime 1724759643.913934
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/functions/comparison.py first seen with mtime 1724759644.8446925
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/__init__.py first seen with mtime 1725127771.9496808
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/decorators.py first seen with mtime 1724759644.4935708
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/base.py first seen with mtime 1724759644.822818
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/debug.py first seen with mtime 1724759644.873092
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/middleware.py first seen with mtime 1724759644.687597
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/__init__.py first seen with mtime 1724759644.8410633
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_symbol.py first seen with mtime 1725019277.3229554
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/backends.py first seen with mtime 1724759644.4927256
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/html/entities.py first seen with mtime 1707004909.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/multicol.py first seen with mtime 1725019277.3270514
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/management/__init__.py first seen with mtime 1724759644.8177767
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/__init__.py first seen with mtime 1724759644.6870317
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/dispatch/__init__.py first seen with mtime 1724759644.8464942
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/generic/list.py first seen with mtime 1724759644.875155
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/serializers/__init__.py first seen with mtime 1724759644.8302515
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/models.py first seen with mtime 1724759644.494209
+File /Users/xsector/pinokio/english_academy_crm/crm/views.py first seen with mtime 1725437430.1945498
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/importlib/resources.py first seen with mtime 1707004902.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sha3.cpython-39-darwin.so first seen with mtime 1708653907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/apps/config.py first seen with mtime 1724759644.3019836
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/decorators.py first seen with mtime 1724759644.364282
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/related_lookups.py first seen with mtime 1724759644.844279
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/utf_8.py first seen with mtime 1707004907.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/__init__.py first seen with mtime 1707004905.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/uu.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/doctemplate.py first seen with mtime 1725019277.326376
+File /Users/xsector/pinokio/english_academy_crm/english_academy_crm/urls.py first seen with mtime 1724921560.71429
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/middleware/security.py first seen with mtime 1724759644.860472
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/typing_extensions.py first seen with mtime 1724759643.8904257
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/utils.py first seen with mtime 1725127771.9509528
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/query.py first seen with mtime 1724759644.8427768
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sites/requests.py first seen with mtime 1724759644.7844384
+File /Users/xsector/pinokio/english_academy_crm/english_academy_crm/__init__.py first seen with mtime 1724759703.9319553
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/ImageMode.py first seen with mtime 1724931226.579581
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/autoreload.py first seen with mtime 1724759644.860763
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/static.py first seen with mtime 1724759644.8734443
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/keywords.py first seen with mtime 1724759643.9142184
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/models.py first seen with mtime 1724759644.3648794
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/handlers/asgi.py first seen with mtime 1724759644.824495
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/forms.py first seen with mtime 1724759644.8472776
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/token.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/translation.py first seen with mtime 1724759644.82184
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/utils.py first seen with mtime 1724759644.6876926
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/sql/__init__.py first seen with mtime 1724759644.8454053
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/fields.py first seen with mtime 1724759644.847146
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/templatetags/admin_modify.py first seen with mtime 1724759644.4561005
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/staggered.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_enc_macexpert.py first seen with mtime 1725019277.3213704
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_enc_winansi.py first seen with mtime 1725019277.3219008
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_sitebuiltins.py first seen with mtime 1707004886.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/threads.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/__init__.py first seen with mtime 1724759644.8433511
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/queues.py first seen with mtime 1707004905.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_constants.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zoneinfo/_common.py first seen with mtime 1707004917.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/_binary.py first seen with mtime 1724931226.5953038
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/copy.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/termcolors.py first seen with mtime 1724759644.871194
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/bz2.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_courieroblique.py first seen with mtime 1725019277.3224092
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/exceptions.py first seen with mtime 1724759644.8388932
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/queue.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/signals.py first seen with mtime 1724759644.494434
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/urls/base.py first seen with mtime 1724759644.8660555
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/dispatch/dispatcher.py first seen with mtime 1724759644.8466117
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/generic/detail.py first seen with mtime 1724759644.874903
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/quopri.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/coroutines.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/templatetags/crispy_forms_filters.py first seen with mtime 1725127771.9514308
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/handlers.py first seen with mtime 1724759644.8170211
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py first seen with mtime 1707004910.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/contentmanager.py first seen with mtime 1707004907.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/platform.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/shutil.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/middleware/common.py first seen with mtime 1724759644.8599038
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/locks.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/operations.py first seen with mtime 1724759644.8328307
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/http.py first seen with mtime 1724759644.8697855
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaboldoblique.py first seen with mtime 1725019277.3227224
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/model_checks.py first seen with mtime 1724759644.8215292
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/sql/query.py first seen with mtime 1724759644.8460786
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/middleware/csrf.py first seen with mtime 1724759644.8600392
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_courierboldoblique.py first seen with mtime 1725019277.3223038
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/html/parser.py first seen with mtime 1707004909.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/cache/__init__.py first seen with mtime 1724759644.8196921
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/engine/statement_splitter.py first seen with mtime 1724759643.915305
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/servers/__init__.py first seen with mtime 1724759644.8310182
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/formatter.py first seen with mtime 1724759643.9140697
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/pdfutils.py first seen with mtime 1725019277.3248105
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/logging/__init__.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/messages/storage/__init__.py first seen with mtime 1724759644.6879437
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/generator.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/images.py first seen with mtime 1724759644.8229249
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata.py first seen with mtime 1725019277.3212638
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_blake2.cpython-39-darwin.so first seen with mtime 1708653912.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/loader_tags.py first seen with mtime 1724759644.8621874
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_lzma.cpython-39-darwin.so first seen with mtime 1708653905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/password_validation.py first seen with mtime 1724759644.4943345
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/crispy_forms/templatetags/__init__.py first seen with mtime 1725127771.9510875
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/termios.cpython-39-darwin.so first seen with mtime 1708653916.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/servers/basehttp.py first seen with mtime 1724759644.8311536
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/related_descriptors.py first seen with mtime 1724759644.8441594
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/struct.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/__init__.py first seen with mtime 1724759644.8468485
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/checks.py first seen with mtime 1724759644.533118
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/temp.py first seen with mtime 1724759644.8232446
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/fields/mixins.py first seen with mtime 1724759644.8437073
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/constants/FIELD_TYPE.py first seen with mtime 1724875170.0632734
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/pagesizes.py first seen with mtime 1725019277.3186834
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/cache/utils.py first seen with mtime 1724759644.819791
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/datastructures.py first seen with mtime 1724759644.8678417
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/text.py first seen with mtime 1724759644.8713348
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/textwrap.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/rl_settings.py first seen with mtime 1725019277.2991033
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/cache/backends/__init__.py first seen with mtime 1724759644.8198924
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/migration.py first seen with mtime 1724759644.8393903
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/templatetags/static.py first seen with mtime 1724759644.864483
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/fonts.py first seen with mtime 1725019277.318103
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/conf/locale/__init__.py first seen with mtime 1724759644.3038425
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/__init__.py first seen with mtime 1724759644.8312955
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/wsgiref/headers.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/operations.py first seen with mtime 1724759644.8343656
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfgen/textobject.py first seen with mtime 1725019277.3260064
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/cache/backends/filebased.py first seen with mtime 1724759644.8204181
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/Image.py first seen with mtime 1724931226.5956082
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/widgetbase.py first seen with mtime 1725019277.308698
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_bisect.cpython-39-darwin.so first seen with mtime 1708653917.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_posixsubprocess.cpython-39-darwin.so first seen with mtime 1708653916.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/forms/utils.py first seen with mtime 1724759644.8478882
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/transform.py first seen with mtime 1725019277.3083775
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/templatetags/log.py first seen with mtime 1724759644.4564464
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/renderbase.py first seen with mtime 1725019277.3076162
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/helpers.py first seen with mtime 1724759644.364745
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/security/sessions.py first seen with mtime 1724759644.8225656
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/__init__.py first seen with mtime 1724759644.8606462
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/middleware.py first seen with mtime 1724759644.750189
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/paragraph.py first seen with mtime 1725019277.3275213
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/headerregistry.py first seen with mtime 1707004908.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/__init__.py first seen with mtime 1724759644.7496858
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/inspect.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/dataclasses.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/deconstruct.py first seen with mtime 1724759644.8684652
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/code39.py first seen with mtime 1725019277.309167
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/client.py first seen with mtime 1724759644.832316
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/uuid.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/wsgiref/util.py first seen with mtime 1707004910.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/collections/abc.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/utils.py first seen with mtime 1724759644.8315353
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/rltempfile.py first seen with mtime 1725019277.3195093
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/translation/__init__.py first seen with mtime 1724759644.8722324
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/trsock.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/filters.py first seen with mtime 1724759644.3645139
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sites/__init__.py first seen with mtime 1724759644.783614
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_helvetica.py first seen with mtime 1725019277.3225195
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/defaultfilters.py first seen with mtime 1724759644.8613365
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/datetime.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/hashers.py first seen with mtime 1724759644.4938478
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/utils.py first seen with mtime 1724759644.8625746
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/formats.py first seen with mtime 1724759644.869232
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/management/commands/__init__.py first seen with mtime 1724759644.826998
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/operations/base.py first seen with mtime 1724759644.8405309
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/getpass.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/backends/base.py first seen with mtime 1724759644.862835
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/string.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/loaders/app_directories.py first seen with mtime 1724759644.8635101
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/conf/__init__.py first seen with mtime 1724759644.3024049
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py first seen with mtime 1707004910.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/__init__.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/loaders/filesystem.py first seen with mtime 1724759644.8638191
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/__init__.py first seen with mtime 1707004904.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/response.py first seen with mtime 1724759644.8623185
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/ExifTags.py first seen with mtime 1724931226.5853074
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_compat_pickle.py first seen with mtime 1707004886.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/wsgiref/simple_server.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/storage/base.py first seen with mtime 1724759644.8238382
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/numberformat.py first seen with mtime 1724759644.8708112
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/sql/datastructures.py first seen with mtime 1724759644.8458338
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/hashlib.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_helveticabold.py first seen with mtime 1725019277.3226209
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/templatetags/admin_list.py first seen with mtime 1724759644.455963
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/i18n.py first seen with mtime 1724759644.8733225
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/functions/__init__.py first seen with mtime 1724759644.8445716
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/uploadedfile.py first seen with mtime 1724759644.8233569
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/management/color.py first seen with mtime 1724759644.8264742
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/select.cpython-39-darwin.so first seen with mtime 1708653918.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/__init__.py first seen with mtime 1724759644.4923658
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/signals.py first seen with mtime 1724759644.831841
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/client.py first seen with mtime 1724759644.8337545
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/functions/datetime.py first seen with mtime 1724759644.8448317
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/transaction.py first seen with mtime 1724759644.831421
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/constants/CLIENT.py first seen with mtime 1724875170.0628946
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_struct.cpython-39-darwin.so first seen with mtime 1708653916.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/dmtx.py first seen with mtime 1725019277.309573
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/cache.py first seen with mtime 1724759644.867507
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/logging/handlers.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/locks.py first seen with mtime 1724759644.8230338
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/nonmultipart.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/shapes.py first seen with mtime 1725019277.3078141
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/decorators/common.py first seen with mtime 1724759644.8738625
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfgen/__init__.py first seen with mtime 1725019277.325278
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/apps/registry.py first seen with mtime 1724759644.3021655
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/error.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/middleware/cache.py first seen with mtime 1724759644.8596482
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/views.py first seen with mtime 1724759644.5336082
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/__init__.py first seen with mtime 1724759644.363783
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/log.py first seen with mtime 1724759644.8703542
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/sequencer.py first seen with mtime 1725019277.3197877
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/__future__.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/indexes.py first seen with mtime 1724759644.8421578
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/dateparse.py first seen with mtime 1724759644.8681092
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/typing.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/wsgi.py first seen with mtime 1724759644.8195486
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/translation/trans_real.py first seen with mtime 1724759644.872696
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/_typing.py first seen with mtime 1724931226.5828946
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/admin.py first seen with mtime 1724759644.5329082
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/registry.py first seen with mtime 1724759644.8216343
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/storage/memory.py first seen with mtime 1724759644.8241782
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/binascii.cpython-39-darwin.so first seen with mtime 1708653911.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/models.py first seen with mtime 1724759644.7503192
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/uploadhandler.py first seen with mtime 1724759644.8234687
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/urls/conf.py first seen with mtime 1724759644.8661666
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/deprecation.py first seen with mtime 1724759644.8687053
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/_encoded_words.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/boxstuff.py first seen with mtime 1725019277.3171399
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/response.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/options.py first seen with mtime 1724759644.8425527
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/backends/django.py first seen with mtime 1724759644.8629653
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/TiffTags.py first seen with mtime 1724931226.5922763
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/manager.py first seen with mtime 1724759644.8424037
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/serializers/python.py first seen with mtime 1724759644.8307006
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/PIL/_deprecate.py first seen with mtime 1724931226.586214
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/cookies.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/encoding.py first seen with mtime 1724759644.8689537
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/zoneinfo/__init__.py first seen with mtime 1707004917.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/utils.py first seen with mtime 1724759644.3654635
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/mixins.py first seen with mtime 1724759644.494085
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/gzip.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/__init__.py first seen with mtime 1725019277.326184
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/views/autocomplete.py first seen with mtime 1724759644.4566772
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/schema.py first seen with mtime 1724759644.8330188
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/genericpath.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/apps.py first seen with mtime 1724759644.8165555
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/filters/__init__.py first seen with mtime 1724759643.915465
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/errors.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/platypus/paraparser.py first seen with mtime 1725019277.3278277
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/aggregates.py first seen with mtime 1724759644.8411741
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_widths_helveticaoblique.py first seen with mtime 1725019277.3228362
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/__init__.py first seen with mtime 1707004907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/template/smartif.py first seen with mtime 1724759644.8624506
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ast.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/http/cookie.py first seen with mtime 1724759644.8589654
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_random.cpython-39-darwin.so first seen with mtime 1708653908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/exceptions.py first seen with mtime 1724759644.8189614
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_bootlocale.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/templatetags/i18n.py first seen with mtime 1724759644.86426
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/weakref.py first seen with mtime 1707004888.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_futures.py first seen with mtime 1707004904.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/constants/FLAG.py first seen with mtime 1724875170.0633821
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/dis.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/checks/compatibility/django_4_0.py first seen with mtime 1724759644.8221502
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/pdfbase/_fontdata_enc_symbol.py first seen with mtime 1725019277.3218014
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/base.py first seen with mtime 1724759644.8322082
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/json/scanner.py first seen with mtime 1707004909.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/release.py first seen with mtime 1724875170.0626233
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/utils.py first seen with mtime 1724759643.9147828
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/asgiref/sync.py first seen with mtime 1724759644.1248825
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/utils/itercompat.py first seen with mtime 1724759644.8701015
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_weakrefset.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/qrencoder.py first seen with mtime 1725019277.3103433
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_subprocess.py first seen with mtime 1707004904.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/enum.py first seen with mtime 1707004887.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/cffi/api.py first seen with mtime 1725058833.4295354
+File /Users/xsector/pinokio/english_academy_crm/crm/admin.py first seen with mtime 1725128491.9527957
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/_mysql.cpython-39-darwin.so first seen with mtime 1724875170.0619893
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/base/introspection.py first seen with mtime 1724759644.8326972
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/utils.py first seen with mtime 1707004908.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/wsgiref/handlers.py first seen with mtime 1707004910.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/sql/subqueries.py first seen with mtime 1724759644.846202
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/filters/output.py first seen with mtime 1724759643.915861
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_ssl.cpython-39-darwin.so first seen with mtime 1708653907.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/backends/__init__.py first seen with mtime 1724759644.7505624
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/bisect.py first seen with mtime 1707004886.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/operations/models.py first seen with mtime 1724759644.8407977
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/email/mime/base.py first seen with mtime 1707004908.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/staticfiles/management/commands/__init__.py first seen with mtime 1724759644.8178906
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/pickle.py first seen with mtime 1707004887.0
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so first seen with mtime 1708653909.0
+File /Users/xsector/pinokio/english_academy_crm/crm/urls.py first seen with mtime 1725437759.477222
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/warnings.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/csrf.py first seen with mtime 1724759644.8729525
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_parse.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/schema.py first seen with mtime 1724759644.8345017
+File /Users/xsector/pinokio/english_academy_crm/crm/__init__.py first seen with mtime 1724760006.0592759
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/graphics/barcode/ecc200datamatrix.py first seen with mtime 1725019277.3098361
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/sqlparse/lexer.py first seen with mtime 1724759643.914371
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/_sysconfigdata__darwin_darwin.py first seen with mtime 1707004917.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/core/files/__init__.py first seen with mtime 1724759644.8227022
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/reportlab/lib/styles.py first seen with mtime 1725019277.319908
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/views/generic/base.py first seen with mtime 1724759644.8746407
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/unix_events.py first seen with mtime 1707004905.0
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/.DS_Store first seen with mtime 1724853989.3561192
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm first seen with mtime 1725438615.6758451
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/academic_progress_list.html first seen with mtime 1725135265.2608888
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/group_form.html first seen with mtime 1725135186.0652707
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/group_detail.html first seen with mtime 1725135196.2684255
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/pagination.html first seen with mtime 1725288803.8221767
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/base.html first seen with mtime 1725292142.665931
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/invoice.html first seen with mtime 1725101978.7246459
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/password_reset_done.html first seen with mtime 1725437575.0068965
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/group_list.html first seen with mtime 1725135132.9378
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/exam_list.html first seen with mtime 1725135097.25002
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/student_detail.html first seen with mtime 1725219659.201199
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/login.html first seen with mtime 1725438396.997451
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/dashboard.html first seen with mtime 1725381439.0262558
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/announcement_list.html first seen with mtime 1725135255.8139172
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/password_reset_email.html first seen with mtime 1725438630.48996
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/password_reset_confirm.html first seen with mtime 1725437607.9231927
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/class_schedule_list.html first seen with mtime 1725135233.6036496
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/password_reset_form.html first seen with mtime 1725437515.6944895
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/change_password.html first seen with mtime 1725127677.818478
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/student_list.html first seen with mtime 1724934568.3619246
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/course_form.html first seen with mtime 1725135217.4814506
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/attendance_form.html first seen with mtime 1725135246.669321
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/payment_list.html first seen with mtime 1725289586.6658695
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/course_detail.html first seen with mtime 1725135225.2456446
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/password_reset_complete.html first seen with mtime 1725437640.531067
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/course_list.html first seen with mtime 1725135209.2036505
+File /Users/xsector/pinokio/english_academy_crm/crm/templates/crm/student_form.html first seen with mtime 1725135150.0800576
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0013_announcement_is_personal_announcement_student.py first seen with mtime 1725203908.8432915
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/migrations/0001_initial.py first seen with mtime 1724759644.4306118
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/migrations/__init__.py first seen with mtime 1724759644.4309313
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/loader.py first seen with mtime 1724759644.8392656
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0007_alter_validators_add_error_messages.py first seen with mtime 1724759644.5314841
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/backends/db.py first seen with mtime 1724759644.7510433
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/recorder.py first seen with mtime 1724759644.8397377
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/idna.py first seen with mtime 1707004906.0
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0002_student_document_number_student_document_type_and_more.py first seen with mtime 1724932046.7412405
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0014_student_email.py first seen with mtime 1725394786.2896166
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/backends/mysql/compiler.py first seen with mtime 1724759644.8338592
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0003_alter_user_email_max_length.py first seen with mtime 1724759644.5310724
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0009_alter_user_last_name_max_length.py first seen with mtime 1724759644.5318406
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0004_remove_payment_course_remove_payment_student_and_more.py first seen with mtime 1725013044.44932
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/executor.py first seen with mtime 1724759644.8390102
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0006_companyinfo_payment_bank_account_holder_and_more.py first seen with mtime 1725021207.2661486
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/migrations/graph.py first seen with mtime 1724759644.839142
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/middleware/clickjacking.py first seen with mtime 1724759644.8597705
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0010_alter_group_name_max_length.py first seen with mtime 1724759644.5319695
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0004_alter_user_username_opts.py first seen with mtime 1724759644.531175
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0011_update_proxy_permissions.py first seen with mtime 1724759644.5320988
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0011_payment_payment_method.py first seen with mtime 1725054864.2193375
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/cursors.py first seen with mtime 1724875170.0625029
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0008_remove_payment_bank_routing_remove_payment_card_cvc_and_more.py first seen with mtime 1725034004.4401364
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/migrations/0001_initial.py first seen with mtime 1724759644.7824206
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/sessions/migrations/__init__.py first seen with mtime 1724759644.7824848
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0001_initial.py first seen with mtime 1724763755.335961
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0001_initial.py first seen with mtime 1724759644.5308597
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/__init__.py first seen with mtime 1724760006.067006
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0008_alter_user_username_max_length.py first seen with mtime 1724759644.5315933
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/__init__.py first seen with mtime 1724759644.5322757
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0007_rename_bank_account_holder_payment_bank_name_and_more.py first seen with mtime 1725026613.4749386
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/migrations/0002_logentry_remove_auto_add.py first seen with mtime 1724759644.4307384
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0012_alter_user_first_name_max_length.py first seen with mtime 1724759644.5322206
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0012_alter_payment_amount.py first seen with mtime 1725105375.968576
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/admin/migrations/0003_logentry_add_action_flag_choices.py first seen with mtime 1724759644.4308672
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/migrations/0002_remove_content_type_name.py first seen with mtime 1724759644.5657525
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0009_companyinfo_fiscal_number.py first seen with mtime 1725034685.3229933
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0002_alter_permission_name_max_length.py first seen with mtime 1724759644.5309672
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/db/models/sql/compiler.py first seen with mtime 1724759644.8455973
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0003_remove_academicprogress_grade_and_more.py first seen with mtime 1724950978.441791
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0006_require_contenttypes_0002.py first seen with mtime 1724759644.5313814
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0005_alter_payment_enrollment.py first seen with mtime 1725017543.3726587
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/migrations/0001_initial.py first seen with mtime 1724759644.56563
+File /Users/xsector/pinokio/english_academy_crm/crm/migrations/0010_alter_companyinfo_fiscal_number.py first seen with mtime 1725035208.3200674
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/contenttypes/migrations/__init__.py first seen with mtime 1724759644.565817
+File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/stringprep.py first seen with mtime 1707004888.0
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/MySQLdb/connections.py first seen with mtime 1724875170.062182
+File /Users/xsector/pinokio/proyecto_crm_2/lib/python3.9/site-packages/django/contrib/auth/migrations/0005_alter_user_last_login_null.py first seen with mtime 1724759644.5312784
+File /Users/xsector/pinokio/english_academy_crm/english_academy_crm/wsgi.py first seen with mtime 1724759703.934006
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.001) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.001) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+(0.001) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+(0.003) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.001) 
+            SELECT
+                table_name,
+                table_type,
+                table_comment
+            FROM information_schema.tables
+            WHERE table_schema = DATABASE()
+            ; args=None; alias=default
+(0.000) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry') LIMIT 21; args=('admin', 'logentry'); alias=default
+(0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',); alias=default
+(0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission') LIMIT 21; args=('auth', 'permission'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group') LIMIT 21; args=('auth', 'group'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'user') LIMIT 21; args=('auth', 'user'); alias=default
+(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3, 4); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype'); alias=default
+(0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session') LIMIT 21; args=('sessions', 'session'); alias=default
+(0.000) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'crm'; args=('crm',); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'course') LIMIT 21; args=('crm', 'course'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'exam') LIMIT 21; args=('crm', 'exam'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'teacher') LIMIT 21; args=('crm', 'teacher'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'student') LIMIT 21; args=('crm', 'student'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'payment') LIMIT 21; args=('crm', 'payment'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'group') LIMIT 21; args=('crm', 'group'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'examresult') LIMIT 21; args=('crm', 'examresult'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'classschedule') LIMIT 21; args=('crm', 'classschedule'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'announcement') LIMIT 21; args=('crm', 'announcement'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'academicprogress') LIMIT 21; args=('crm', 'academicprogress'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'attendance') LIMIT 21; args=('crm', 'attendance'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'familymember') LIMIT 21; args=('crm', 'familymember'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'enrollment') LIMIT 21; args=('crm', 'enrollment'); alias=default
+(0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'crm' AND `django_content_type`.`model` = 'companyinfo') LIMIT 21; args=('crm', 'companyinfo'); alias=default
+(0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20); alias=default
+(0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'crm'; args=('crm',); alias=default
