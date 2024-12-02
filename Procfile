@@ -1,0 +1,1 @@
+web: gunicorn english_academy_crm.wsgi:application
